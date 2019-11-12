@@ -194,6 +194,7 @@ class ModelExtension
 
 function foo() : string
 {
+    return 'foo';
 }
 
 class Thread extends Model

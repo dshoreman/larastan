@@ -33,19 +33,19 @@ final class OptionsResolver
     private const DEFAULT_MEMORY_LIMIT = '2048M';
 
     /**
-     * @var \PHPStan\Command\AnalyseCommand
+     * @var AnalyseCommand
      */
     private $command;
 
     /**
-     * @var \Symfony\Component\Console\Input\InputDefinition
+     * @var InputDefinition
      */
     private $definition;
 
     /**
      * OptionsResolver constructor.
      *
-     * @param \PHPStan\Command\AnalyseCommand $command
+     * @param AnalyseCommand $command
      */
     public function __construct(AnalyseCommand $command)
     {
@@ -53,7 +53,7 @@ final class OptionsResolver
     }
 
     /**
-     * @return \Symfony\Component\Console\Input\InputDefinition
+     * @return InputDefinition
      */
     public function getDefinition(): InputDefinition
     {
